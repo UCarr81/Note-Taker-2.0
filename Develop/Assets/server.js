@@ -32,12 +32,12 @@ app.post('/api/notes', (req, res) => {
   res.json(newNote);
 });
 
-app.get('/notes', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Develop/notes.html'));
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, '../index.html'));
 });
 
-app.get('/', (req, res) => {
-    res.sendFile(path.join(__dirname, '/Develop/index.html'));
+app.get('/notes', (req, res) => {
+    res.sendFile(path.join(__dirname, '../notes.html'));
 });
 
 app.listen(PORT, () =>
