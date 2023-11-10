@@ -123,7 +123,7 @@ const handleRenderBtns = () => {
   } else if (!noteTitle.value.trim() || !noteText.value.trim()) {
     hide(saveNoteBtn);
   } else {
-    show(saveNoteBtn);
+    show(saveNoteBtn);a
   }
 };
 
